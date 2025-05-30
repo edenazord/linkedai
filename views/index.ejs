@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedAi - Home</title>
+    <meta name="description" content="LinkedAi: Analisi intelligente dei post LinkedIn con l'AI di Grok, creato da Filippo Tacchini">
+    <meta name="keywords" content="LinkedIn, analisi, Grok, social media, AI, Filippo Tacchini">
+    <meta name="author" content="Filippo Tacchini">
+    <meta property="og:title" content="LinkedAi - Home">
+    <meta property="og:description" content="Analisi intelligente dei post LinkedIn con Grok, creato da Filippo Tacchini">
+    <meta property="og:image" content="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">LinkedAi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">LinkedAi</h1>
+        
+            <div class="mt-3">
+                <p class="stats-text"><strong>Post analizzati:</strong> <%= postCount %></p>
+                <p class="stats-text"><strong>Last scraping:</strong> <%= lastScraped ? new Date(lastScraped).toLocaleString('it-IT', { dateStyle: 'medium', timeStyle: 'short' }) : 'Nessuna scrapata' %></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sezione Progetto -->
+    <section id="project" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h2 class="mb-4">Il Progetto</h2>
+                    <p class="lead">Raccolgo i feed dei contatti del mio bot per analizzarli tramite le Api e di GrokAI condividendo il risultato pubblicamente.</p>
+                    <p class="lead">Se vuoi che i tuoi post vengano analizzati richiedi il contatto al bot .</p>
+                      <a href="https://www.linkedin.com/in/linkedai-bot/" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-linkedin me-2"></i>Richiedi contatto
+                        </a>
+                    <h3 class="mt-4">Caratteristiche Tecniche</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Scraping automatizzato con Puppeteer</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Analisi AI con Grok di xAI</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Interfaccia responsive con Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Backend con Node.js, Express, MongoDB</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Commenti automatici su LinkedIn</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Template dinamici con EJS</li>
+                            </ul>
+                        </div>
+                    </div>
+                          <h3 class="mt-4">Prossimi sviluppi</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Analisi immagini e video</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Aumento velocità di scraping</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Miglioramento sentiment analysis </li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Creatore -->
+    <section id="creator" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h2 class="mb-4">About me</h2>
+                    <p class="lead">Sono Filippo Tacchini, sviluppatore frontend con oltre un decennio di esperienza in tecnologia e innovazione digitale.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Competenze Tecniche</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-code-slash text-primary me-2"></i>HTML, CSS, JavaScript, TypeScript, PHP, SQL, Python</li>
+                                <li class="mb-2"><i class="bi bi-bootstrap text-primary me-2"></i>Angular, Bootstrap</li>
+                                <li class="mb-2"><i class="bi bi-git text-primary me-2"></i>Git, GitHub, Visual Studio Code, WebStorm</li>
+                                <li class="mb-2"><i class="bi bi-database text-primary me-2"></i>RESTful APIs, JSON, AJAX, MongoDB, Node.js</li>
+                                <li class="mb-2"><i class="bi bi-kanban text-primary me-2"></i>Agile, Scrum, SEO, Growth Hacking</li>
+                    
+                     
+                            </ul>
+                        </div>
+                 
+                    </div>
+                    <p class="lead">Son sempre pronto a nuove sfide lavorative!</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/tacchinifilippo/" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-linkedin me-2"></i>Contattami su LinkedIn
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="mb-0">© 2025 LinkedAi. Creato da Filippo Tacchini.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>

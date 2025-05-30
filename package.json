@@ -1,0 +1,23 @@
+{
+  "name": "linkedai-node",
+  "version": "1.0.0",
+  "description": "LinkedAi project in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.9",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "linkedai-node": "file:",
+    "mongoose": "^8.7.0",
+    "puppeteer": "^23.11.1",
+    "puppeteer-core": "^24.9.0"
+  }
+}
